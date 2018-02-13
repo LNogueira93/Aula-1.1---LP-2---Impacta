@@ -27,3 +27,6 @@ elif (FormaPag == 3):
 elif (FormaPag == 4):
   print("Em 3 vezes no cartão de crédito, com juros de 10%")
   print("Valor a ser pago é de :", valor + valor * 0.10)
+
+else:
+  print("Forma de pagamento inválida")
