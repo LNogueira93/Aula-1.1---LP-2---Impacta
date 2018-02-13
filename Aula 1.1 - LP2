@@ -14,19 +14,23 @@ FormaPag = int(input("Escolha a forma de pagamento: "))
 
 if (FormaPag == 1):
   print("À vista em dinheiro ou cheque, desconto de 10%")
-  print("Valor a ser pago é de :", valor - valor * 0.10)
+  valor1 = (valor - valor * 0.10)
+  print("Valor a ser pago é de: %.2f" % valor1)
   
 elif (FormaPag == 2):
   print("À vista no cartão de crédito, desconto de 5%")
-  print("Valor a ser pago é de :", valor - valor * 0.05)
+  valor2 = (valor - valor * 0.05)
+  print("Valor a ser pago é de: %.2f" % valor2)
 
 elif (FormaPag == 3):
    print("Em 2 vezes no cartão de crédito, sem juros")
-   print("Valor a ser pago é de :", valor)
+   valor3 = (valor)
+   print("Valor a ser pago é de: %.2f" % valor3)
 
 elif (FormaPag == 4):
   print("Em 3 vezes no cartão de crédito, com juros de 10%")
-  print("Valor a ser pago é de :", valor + valor * 0.10)
+  valor4 = (valor + valor * 0.10)
+  print("Valor a ser pago é de: %.2f" % valor4)
 
 else:
   print("Forma de pagamento inválida")
